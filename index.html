@@ -54,12 +54,15 @@
           <div class="col-12 col-sm align-self-center">
             <img src="img/logo.png" alt="Company Logo" class="img-fluid" />
           </div>
+          <div class="col-12 col-sm m-auto">
+            <a href="#reserve"><button class="btn btn-warning">Reserve a Table</button></a>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="container">
-      <div class="row row-content align-items-center">
+      <div class="row row-content align-items-center m-auto">
         <div class="col-12 col-sm-4 col-md-3 order-sm-last">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
@@ -75,7 +78,7 @@
                 Uthappizza <span class="badge badge-danger">HOT</span
                 ><span class="badge badge-pill badge-secondary">4.99</span>
               </h2>
-              <p>
+              <p class="d-none d-sm-block">
                 A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with
                 Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and
                 Buffalo Paneer.
@@ -85,13 +88,18 @@
         </div>
       </div>
 
-      <div class="row row-content align-items-center">
+      <div class="row row-content align-items-right">
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
+        <div class="col-12 col-sm-2 col-md-2 order-sm-last">
+          <div class="media">
+            <img src="img/buffet.png" alt="buffet" class="d-flex align-self-center img-thumbnail" />
+          </div>
+        </div>
         <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
+          <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+          <p class="d-none d-sm-block">
             Featuring mouthwatering combinations with a choice of five different salads, six
             enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly
             and soft drinks. All for just $19.99 per person
@@ -109,12 +117,65 @@
             <div class="media-body">
               <h2>Alberto Somayya</h2>
               <h4>Executive Chef</h4>
-              <p>
+              <p class="d-none d-sm-block">
                 Award winning three-star Michelin chef with wide International experience having
                 worked closely with whos-who in the culinary world, he specializes in creating
                 mouthwatering Indo-Italian fusion experiences.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-content">
+        <div class="card" id="reserve">
+          <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+          <div class="card-body">
+            <form action="" id="reserve-form">
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label"><strong>Number of Guests</strong></label>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size1" />
+                  <label for="size1">1</label>
+                </div>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size2" />
+                  <label for="size2">2</label>
+                </div>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size3" />
+                  <label for="size3">3</label>
+                </div>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size4" />
+                  <label for="size4">4</label>
+                </div>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size5" />
+                  <label for="size5">5</label>
+                </div>
+                <div class="col-1">
+                  <input type="radio" name="size" id="size6" />
+                  <label for="size6">6</label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-12 col-md-3 col-form-label"
+                  ><strong>Date and Time</strong></label
+                >
+                <div class="col-7 col-md-4">
+                  <input type="text" class="form-control" placeholder="Date" />
+                </div>
+                <div class="col-7 col-md-4">
+                  <input type="text" class="form-control" placeholder="Time" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-3">
+                  <button class="btn btn-primary">Reserve</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
